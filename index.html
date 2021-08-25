@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Actorlist</title>
+  </head>
+  <body>
+    <header id="top">
+      <h1>Actorlist</h1>
+    </header>
+    <main>
+      <section class="popup behind">
+        <div class="popup-template sticky hidden">
+          <div class="center">
+            <h1 class="selected-actor">Actor Name</h1>
+            <h2 class="selected-movie">Movie</h2>
+            <img class="selected-movie-icon" src="movie-icon-popup" alt="icon" />
+          </div>
+        </div>
+      </section>
+
+      <div class="transparant hidden"></div>
+
+      <section class="actorlist front">
+        <template class="actor-card-template">
+          <a href="#top" class="card-div">
+            <p class="actor-name">Actor Name</p>
+            <img class="movie-icon" src="/icons/pill.svg" />
+          </a>
+        </template>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="app.js"></script>
+</html>

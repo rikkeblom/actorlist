@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;0,900;1,300&display=swap");
+
+* {
+  font-family: "Rubik", sans-serif;
+  color: white;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  background-color: rgb(72, 72, 100);
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+}
+
+.card-div {
+  width: 10rem;
+  height: 10rem;
+  background-color: rgb(31, 31, 58);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 1rem;
+  box-shadow: 10px 10px 16px -4px rgba(153, 153, 153, 0.65);
+}
+
+.movie-icon {
+  height: 2rem;
+  pointer-events: none;
+}
+
+.actor-name {
+  pointer-events: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+.actorlist {
+  margin-left: max(5rem, 20%);
+  margin-right: max(5rem, 20%);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5rem, 10rem));
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  z-index: -1;
+}
+
+/*----------------POPUP----------------*/
+
+.sticky {
+  position: absolute;
+  z-index: 1;
+  height: 15rem;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+  margin-top: 3rem;
+  background: black;
+}
+
+.front {
+  z-index: 3;
+}
+
+.behind {
+  z-index: 1;
+}
+
+.selected-movie-icon {
+  height: 5rem;
+  margin: 2rem;
+}
+
+.selected-movie {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.selected-actor {
+  padding-top: 2rem;
+}
+
+.transparant {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.658);
+  position: absolute;
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
